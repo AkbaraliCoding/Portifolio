@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(13, 39, 58);
+    color: #fff;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+a,
+p {
+    font-weight: 400;
+}
+
+nav {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-links a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.nav-links a:hover {
+    color: aqua;
+}
+
+nav .nav-links a:first-child {
+    color: aqua;
+}
+
+.main-page {
+    padding: 30px;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.main-page h1 {
+    font-size: 50px;
+}
+
+.main-page p {
+    padding: 10px 0;
+    font-size: 20px;
+    width: 800px;
+}
+
+.main-page-links {
+    display: flex;
+    margin: 10px 0;
+}
+
+.main-page-links a {
+    padding: 10px 30px;
+    border: 1px solid aqua;
+    color: aqua;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.main-page-links a:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+.linksToWeb {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    padding: 0 20px;
+
+}
+
+.linksToWeb a {
+    border-radius: 50%;
+}
+
+.linksToWeb a svg {
+    transition: .5s;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid aqua;
+    fill: aqua;
+}
+
+.linksToWeb a:hover svg {
+    background-color: aqua;
+    fill: rgb(8, 26, 39);
+}
+
+.main-page-img {
+    position: absolute;
+    left: 60%;
+    top: 0%;
+    width: 400px;
+    filter: drop-shadow(0 0 10px aqua);
+    animation: animateimg 3s linear infinite;
+}
+
+@keyframes animateimg {
+    0% {
+        top: 0%;
+    }
+
+    50% {
+        top: 6%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+
+.typed-txt {
+    color: aqua;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.aboutMe {
+    background: linear-gradient(rgb(17, 53, 78), rgb(13, 39, 58));
+}
+
+.aboutMe h1 {
+    font-size: 50px;
+}
+
+.aboutMe h1 span {
+    color: aqua;
+}
+
+.section1-img img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid aqua;
+    transition: .5s;
+    box-shadow: 0 0 50px 5px aqua;
+}
+
+.section1-img img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 80px 5px #fff;
+}
+
+.section1 p {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.section1 a {
+    padding: 10px 20px;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.section1 a:hover {
+    background-color: aqua;
+    color: rgb(13, 39, 58);
+    box-shadow: 0 0 20px 5px aqua;
+}
+
+
+
+
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(8, 26, 39);
+}
+.Journey-name{
+    font-size: 50px;
+    padding: 15px 0;
+}
+.Journey-name span{
+    color: aqua;
+}
+.section2-div{
+    display: flex;
+}
+.section2-box-div{
+    margin: 10px;
+    border-left: 3px solid aqua;
+    padding: 10px 20px;
+}
+.section-box{
+    border: 1px solid aqua;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.section-box span{
+    color: aqua;
+}
+.section-box h1{
+    margin: 10px 0;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* justify-content: space-evenly; */
+    height: 100vh;
+    text-align: center;
+}
+.skills{
+    display: flex;
+}
+.skill-box{
+    border: 3px solid aqua;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+.skill-box-name{
+    font-size: 50px;
+}
+.skill-box-name span{
+    color: aqua;
+}
+.skill-box h1{
+    font-size: 30px;
+}
+.skill-box li{
+    list-style: none; 
+    margin-bottom: 30px;   
+}
+.bar{
+    display: block;
+    height: 20px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+.skill-box h3{
+    margin: 10px 0;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, aqua, rgb(0, 102, 255));
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.css{
+    width: 70%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.vue{
+    width: 60%;
+    animation: vue 2s;
+}
+@keyframes vue {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.javascript{
+    width: 70%;
+    animation: js 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.nodejs{
+    width: 50%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.express{
+    width: 50%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.mongo{
+    width: 30%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+.python{
+    width: 35%;
+    animation: py 2s;
+}
+@keyframes py {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+
+
+.sect5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(8, 26, 39);
+}
+.sect5 h1{
+    font-size: 50px;
+    margin: 30px auto;
+    font-weight: 600;
+}
+.sect5 h1 span{
+    color: aqua;
+}
+
+.sect5 .small-inp input{
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    margin: 3px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid aqua;
+    border-radius: 10px;
+    color: #fff;    
+}
+
+.sect5 .small-inp input::placeholder{
+    color: #fff;
+}
+.input2{
+    display: flex;
+    flex-direction: column;
+}
+.input2 input{
+    width: 515px;
+    height: 50px;
+    background: transparent;
+    margin: 10px;
+    border: 3px solid aqua;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+}
+.input2 input::placeholder{
+    color: #fff;
+}
+.sect5 a{
+    padding: 10px 20px;
+    background: aqua;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(8, 26, 39);
+    cursor: pointer;
+}
+footer{
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: aqua;
+    outline: none;
+    border: 3px solid aqua;
+    font-size: 20px;
+    border-radius: 20px;
+    color: rgb(8, 26, 39);
+}
+@media screen and (max-width: 400px) {
+    * {
+        text-align: center;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    nav{
+        display: block;
+    }
+    nav h1{
+        text-align: center;
+    }
+    .nav-links {
+        display: none;
+    }
+    
+    .main-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-page-img {
+        position: unset;
+        width: 250px;
+    }
+    .main-page p{
+        font-size: 15px;
+        width: auto;
+        text-align: center;
+    }
+    .main-page-links{
+        text-align: center;
+        justify-content: center;
+    }
+    .section1, .section2{
+        display: none;
+    }
+    .linksToWeb{
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .linksToWeb a{
+        margin: auto 10px;
+    }
+
+
+    
+}
